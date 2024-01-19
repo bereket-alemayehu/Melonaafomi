@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EXAM</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <script defer src="exam.js"></script>
+  </head>
+  <body>
+    <div class="exam-container">
+      <p class="exam-subject">SoftWare programming final exam</p>
+      <h2 class="question-text">question</h2>
+
+      <ul class="date">
+        <li class="timeAllowed">Time Allowed</li>
+        <li class="hour time">7:</li>
+        <li class="minute time">30:</li>
+        <li class="second time">33</li>
+        <!-- <li class="AMPM">PM</li> -->
+      </ul>
+
+      <ul class="question-list">
+        <li>
+          <input type="radio" name="answer" id="a" class="answer" />
+          <label for="a" id="a_text">question</label>
+        </li>
+        <li>
+          <input type="radio" name="answer" id="b" class="answer" />
+          <label for="b" id="b_text">question</label>
+        </li>
+        <li>
+          <input type="radio" name="answer" id="c" class="answer" />
+          <label for="c" id="c_text">question</label>
+        </li>
+        <li>
+          <input type="radio" name="answer" id="d" class="answer" />
+          <label for="d" id="d_text">question</label>
+        </li>
+      </ul>
+      <div class="btns">
+        <div class="prev-btn btn">prev</div>
+        <div class="next-btn btn">Next</div>
+      </div>
+    </div>
+    <div class="timeOut commen">The Time Is Up ! ⏲</div>
+    <div class="Good-Luck commen">Good Luck</div>
+  </body>
+</html>
