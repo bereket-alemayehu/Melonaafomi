@@ -1,0 +1,263 @@
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ body {
+   line-height: 1;
+   color: #444;
+   font-family: sans-serif;
+   background: linear-gradient(to top left, #fff, #f7f7f7);
+
+ }
+
+ .navigation ul {
+   display: flex;
+   justify-content: space-between;
+   /* gap: 20px; */
+   list-style: none;
+   /* font-size: 20px; */
+   text-transform: capitalize;
+   padding: 20px;
+   margin-bottom: 16px;
+
+ }
+
+ .navigation {
+   background: linear-gradient(to right bottom, #ee8a26, #efd55d);
+ }
+
+ .nav-link:link,
+ .nav-link:visited {
+   text-decoration: none;
+   color: #444;
+   font-size: 22px;
+   font-style: italic;
+ }
+
+ .links:link,
+ .links:visited {
+   text-decoration: none;
+ }
+
+ .nav-link:hover,
+ .nav-link:active {
+   text-decoration: underline 2px #444;
+   transform: rotate(45%);
+   color: #f7f7f7;
+   font-weight: bold;
+ }
+
+ .links {
+   color: #444;
+ }
+
+ .container::before {
+   content: "ቀድመው ይመዝገቡ 📝";
+   position: absolute;
+   top: 8%;
+   right: -5%;
+   background: linear-gradient(to top left, #53b853, #9dd79d);
+   padding: 12px 44px;
+   color: #fff;
+   font-size: 18px;
+   transform: rotate(45deg);
+   /* box-sizing: border-box; */
+ }
+
+ .container {
+
+   overflow: hidden;
+   margin: 0 auto;
+   width: 1000px;
+   height: auto;
+   background-image: linear-gradient(to right bottom, #db8c3d, #f1e3a3);
+   border-radius: 5px;
+   /* border-bottom-right-radius: 5px;
+   border-bottom-left-radius: 5px; */
+   position: relative;
+   box-shadow: 0 20px 70px rgba(0, 0, 0, 0.55);
+
+
+   /* height: 100vh; */
+ }
+
+ .header {
+   display: flex;
+   justify-content: center;
+ }
+ .sticky {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+ h1 {
+   margin-top: 36px;
+   font-size: 48px;
+   font-style: italic;
+ }
+
+
+ .unordered-list {
+   list-style: none;
+
+ }
+
+ .unordered-list li {
+   padding: 24px;
+   font-size: 24px;
+   color: #444;
+   /* color: #446521; */
+ }
+
+ .sub-main {
+   display: flex;
+   justify-content: center;
+   /* align-items: center; */
+   column-gap: 48px;
+   /* border-radius: 5px; */
+
+ }
+
+ .btn2 {
+
+   /* font-size: 20px; */
+   text-align: center;
+   /* display: flex;
+   justify-content: center; */
+   /* padding: 24px; */
+   position: absolute;
+   right: 55%;
+   top: 65%;
+   margin-top: 32px;
+
+
+ }
+
+ .btn2 .learn {
+   font-size: 20px;
+   padding: 16px 48px;
+   border-radius: 100px;
+   border: none;
+   cursor: pointer;
+   margin-top: 48px;
+   background-color: #53b853;
+   color: #fff;
+ }
+
+ .learn:hover,
+ .learn:active {
+   box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
+   transform: scale(1.2);
+
+ }
+
+ footer p {
+   margin-top: 96px;
+   font-size: 14px;
+   background-color: #f7f7f7;
+   color: #777;
+   letter-spacing: 1.2px;
+ }
+
+ .btns {
+   cursor: pointer;
+   border-radius: 50%;
+   border: none;
+   padding: 16px;
+ }
+
+ .btns:hover,
+ .btns:active {
+   box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.1);
+   transform: scale(1.1);
+ }
+
+ .tip {
+   /* padding: 12px; */
+   font-size: 24px;
+   /* border-radius: 4px; */
+   /* border: none; */
+   /* background-color: #f7f7f7; */
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 70%;
+
+   background-color: #efd55d;
+   padding: 3rem;
+   border-radius: 5px;
+   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+   z-index: 10;
+ }
+
+ .close-modal {
+   font-weight: 500;
+   font-size: 48px;
+   border: none;
+   background-color: #efd55d;
+   cursor: pointer;
+   /* border: none; */
+ }
+
+ .hidden {
+   display: none;
+ }
+
+ /* .tip p {
+   width: 600px;
+   height: 30vh;
+
+ } */
+
+ .close-modal {
+   float: right;
+ }
+
+ .main {
+   border-radius: 5px;
+ }
+
+ .overlay {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   /* background; */
+ }
+
+ .input {
+   padding: 16px;
+   font-size: 18px;
+   border-radius: 5px;
+   border: 1px solid #e2e2e2;
+   background-color: #f7f7f7;
+ }
+
+ .buttons {
+   background-color: #fff;
+   border-radius: 1rem;
+   overflow: scroll;
+   width: 100%;
+   height: 100%;
+ }
+
+ /*  movements */
+ .movements {
+   background-color: #fff;
+   border-radius: 1rem;
+   overflow: scroll;
+ }
+
+ .movements__row {
+   padding: 2.25rem 4rem;
+   border-bottom: 1px solid #eee;
+ }
+
+ .movements__value {
+   font-size: 1.7rem;
+   margin-left: auto;
+ }
